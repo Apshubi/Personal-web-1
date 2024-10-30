@@ -1,0 +1,36 @@
+/* 布局设置 */
+body {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直方向排列 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    height: 100vh; /* 满屏高度 */
+    margin: 0; /* 去掉默认的 margin */
+    overflow: hidden; /* 取消滚动条 */
+    position: relative; /* 使伪元素相对于 body 定位 */
+    color: white; /* 文字颜色 */
+}
+
+/* 背景渐变效果 */
+body::before {
+    content: ""; /* 必须设置内容 */
+    position: fixed; /* 固定定位 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)); /* 更平滑的渐变 */
+    z-index: 0; /* 确保在内容下面 */
+}
+
+/* 内容容器设置 */
+.content {
+    position: relative; /* 确保内容在遮罩层之上 */
+    z-index: 1; /* 确保内容在遮罩层之上 */
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直方向排列 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    height: 100%; /* 确保内容占满整个高度 */
+    pointer-events: auto; /* 允许内容区域的交互 */
+}

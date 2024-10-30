@@ -1,0 +1,28 @@
+/* 头像容器样式 */
+.avatar-container {
+    width: 150px; /* 容器宽度 */
+    height: 150px; /* 容器高度 */
+    display: inline-block; /* 使头像容器为行内块元素 */
+    border: 2px solid white; /* 初始外边框颜色 */
+    border-radius: 50%; /* 圆形边框 */
+    transition: border-color 0.3s; /* 边框颜色变化的过渡效果 */
+    padding: 0; /* 确保没有额外的 padding */
+    margin: -30px; /* 确保没有额外的 margin */
+}
+
+.avatar-container:hover {
+    border-color: #ff9fcf; /* 鼠标悬停时改变外边框颜色 */
+}
+
+/* 头像样式 */
+.touxiang {
+    width: 150px; /* 头像宽度 */
+    height: 150px; /* 头像高度 */
+    border-radius: 50%; /* 圆形 */
+    object-fit: cover; /* 图片裁剪方式 */
+    transition: transform 1s; /* 旋转动画的过渡效果 */
+}
+
+.avatar-container:hover .touxiang {
+    transform: rotate(360deg); /* 悬停时旋转 */
+}

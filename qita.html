@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他</title>   
+    <link rel="stylesheet" href="css/avatar.css">
+    <link rel="stylesheet" href="css/button-list.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/icon-button.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/typography.css">
+</head>
+<body>
+    <div class="content"> <!-- 添加 content 类 -->
+        <h1 style="color: brown;">好奇宝宝不要点开哦!</h1>
+        <h2 style="color: brown;">!!!千万!!!</h2>
+        <a href="#" id="play-video" data-video-url="Img/jijidadie.mp4">播放视频</a>
+
+        <video id="video-player" width="100%" height="auto" controls style="display: none; max-width: 600px; object-fit: cover;">
+            <source src="Img/jijidadie.mp4" type="video/mp4">
+        </video>        
+    </div>
+    <script>
+        document.getElementById('play-video').addEventListener('click', function(event) {
+            event.preventDefault(); // 阻止链接的默认跳转行为
+            var videoUrl = this.getAttribute('data-video-url'); // 获取视频链接
+            var videoPlayer = document.getElementById('video-player');
+            videoPlayer.src = videoUrl; // 设置视频源
+            videoPlayer.style.display = 'block'; // 显示视频播放器
+            videoPlayer.play(); // 播放视频
+        });
+    </script>
+    <script>
+        // 设置背景壁纸
+        document.body.style.backgroundImage = "url(Img/Beijin1.png)";
+        document.body.style.backgroundSize = "cover"; // 设置背景图像覆盖
+        document.body.style.backgroundAttachment = "fixed"; // 固定背景图像
+        document.body.style.backgroundPosition = "center"; // 背景图像居中
+    </script>
+    
+</body>
+</html>

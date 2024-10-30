@@ -1,0 +1,18 @@
+/* 按钮样式 */
+.border-button {
+    padding: 10px 20px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    color: white; /* 字体颜色 */
+    background-color: transparent; /* 背景透明 */
+    border: 1px solid white; /* 边框颜色 */
+    border-radius: 90px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停样式 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: background-color 0.3s; /* 过渡效果 */
+}
+
+.border-button:hover {
+    background-color: #ff9fcf; /* 悬停时背景颜色 */
+    color: black; /* 悬停时字体颜色 */
+    border: 2px solid #ffffff; /* 边框颜色一致 */
+}

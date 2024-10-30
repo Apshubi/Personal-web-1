@@ -1,0 +1,35 @@
+/* 图标按钮列表样式 */
+.icon-button-list {
+    display: flex; /* 横向排列 */
+    justify-content: center; /* 水平居中 */
+    gap: 20px; /* 图标按钮之间的间距 */
+    list-style-type: none; /* 去掉默认样式 */
+    padding: 0; /* 去掉内边距 */
+    margin: 30px 0 0; /* 增加顶部外边距 */
+    margin-top: 30px; /* 增加顶部外边距 */
+
+}
+
+/* 图标按钮样式 */
+.icon-button {
+    display: flex; /* 使链接成为 Flexbox 元素 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 45px; /* 按钮宽度 */
+    height: 45px; /* 按钮高度 */
+    border-radius: 50%; /* 圆形按钮 */
+    background-color: transparent; /* 按钮背景颜色 */
+    border: 0px solid white; /* 边框颜色 */
+    color: white; /* 图标颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+}
+
+.icon-button:hover {
+    background-color: #ff9fcf; /* 悬停时的背景颜色 */
+    color: white; /* 悬停时的字体颜色 */
+}
+
+.icon-button i {
+    font-size: 18px; /* 图标大小 */
+}
